@@ -6,7 +6,7 @@ The **Food Ordering API** is designed to support the **restaurant templates** in
 
 ---
 
-## 🧩 Project Context: SolutionWorks
+## Project Context: SolutionWorks
 
 **SolutionWorks** is a project that provides **free and reusable website templates** for small businesses.
 
@@ -20,7 +20,7 @@ This API represents **one core backend step** for the **restaurant template**, e
 
 ---
 
-## 🚀 Features
+## Features
 
 - RESTful API design
 - Menu item management
@@ -32,7 +32,7 @@ This API represents **one core backend step** for the **restaurant template**, e
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Python**
 - **Django**
