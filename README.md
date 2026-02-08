@@ -41,6 +41,51 @@ This API represents **one core backend step** for the **restaurant template**, e
 - **SQLite** (development database)
 
 ---
+## 📡 API Endpoints (Overview)
 
+### Categories
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| GET | `/api/categories` | List all categories |
+| POST | `/api/categories` | Create a category (manager only) |
+
+---
+
+### Menu Items
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| GET | `/api/menu-items` | List all menu items |
+| POST | `/api/menu-items` | Create a menu item (manager only) |
+| GET | `/api/menu-items/{id}` | Retrieve a menu item (manager only)|
+| PUT | `/api/menu-items/{id}` | Update a menu item (manager only)|
+| DELETE | `/api/menu-items/{id}` | Delete a menu item (manager only)|
+
+---
+
+### Cart
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| GET | `/api/cart/menu-items` | View current user's cart |
+| POST | `/api/cart/menu-items` | Add item to cart |
+| DELETE | `/api/cart/menu-items` | Clear cart |
+
+---
+
+### Orders
+| Method | Endpoint | Description |
+|------|---------|-------------|
+| GET | `/api/orders` | List orders |
+| POST | `/api/orders` | Create a new order |
+| GET | `/api/orders/{id}` | Retrieve an order |
+| PATCH | `/api/orders/{id}` | Update order status (delivery crew and manager only) |
+
+---
+
+### Role Management
+
+| Role | Endpoint | Purpose |
+|----|--------|---------|
+| Manager | `/api/groups/manager/users` | Manage restaurant managers (superuser only)|
+| Delivery Crew | `/api/groups/delivery-crew/users` | Manage delivery crew members (manager only)|
 
 
