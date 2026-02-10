@@ -131,7 +131,7 @@ class SingleOrderView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
             return Order.objects.all()
 
     def delete(self, request, *args, **kwargs):
-        if not self.request.user.groups.filter(name='Manager').exists() or not self.request.user.is_superuser():
+        if not self.request.user.groups.filter(name='Manager').exists() or not self.request.user.is_superuser:
             return Response({'message': 'You do not have the permission.'}, status=status.HTTP_403_FORBIDDEN)
         return super().delete(request, *args, **kwargs)
 
