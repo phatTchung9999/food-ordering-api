@@ -41,7 +41,7 @@ This API represents **one core backend step** for the **restaurant template**, e
 - **SQLite** (development database)
 
 ---
-## 📡 API Endpoints (Overview)
+## API Endpoints (Overview)
 
 ### Categories
 | Method | Endpoint | Description |
